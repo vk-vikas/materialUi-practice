@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Typography, Button, Container } from "@material-ui/core";
+
+import useStyles from "./styles";
 
 function App() {
+  const classes = useStyles();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Typography variant="h1" align="center">
+        hello
+      </Typography>
+      <div className={classes.container}>
+        <Container maxWidth="sm" align="center">
+          <Typography variant="h4">This is the title </Typography>
+          <Typography variant="h6">
+            This is the the body of this section.{" "}
+          </Typography>
+          <div className={classes.buttonGroup}>
+            <Button variant="contained" color="primary">
+              edit
+            </Button>
+            <Button variant="contained" color="secondary">
+              submit
+            </Button>
+          </div>
+        </Container>
+      </div>
     </div>
   );
 }
