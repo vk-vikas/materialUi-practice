@@ -7,6 +7,12 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonGroup: {
         paddingTop: '20px'
+    },
+    Drawer:{
+        height:'100vh',
+        minWidth:'300px',
+        backgroundColor: '#888888',
+        color: 'white'
     }
 }))
 
